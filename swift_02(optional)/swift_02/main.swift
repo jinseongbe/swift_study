@@ -74,7 +74,7 @@ class MyAge {
     let age1 : Int = age
     print(age1)   // 1
     let age2 = age + 2
-    print(age)    // 3
+    print(age2)    // 3
   }
 }
 

@@ -19,6 +19,7 @@ print()
 
 
 let numberOfLegs = ["spider": 8, "and": 6, "cat": 4]
+print(type(of: numberOfLegs))
 for (animalName, legCount) in numberOfLegs {
   print("\(animalName)s have \(legCount) legs")
 }
@@ -43,11 +44,12 @@ print()
 
 // break, continue
 for i in 1...10 {
-  print(i, terminator: " ")
-  
   if i == 4 {
-    print(i, "continue")
+    print("continue")
+    continue
   }
+  
+  print(i, terminator: " ")
   
   if i == 7 {
     print("end")
@@ -115,7 +117,7 @@ default:
 }
 print("\(count)입니다")
 
-var temperature = 60
+var temperature = 59
 switch temperature {
 case 0...49 where temperature % 2 == 0:
   print("cold and even")
